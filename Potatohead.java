@@ -9,7 +9,7 @@ public class Potatohead
 	
   
 	/*  the default, no argument constructor  */
-	public PotatoHead()
+	public Potatohead()
 	{
 		/* initialize ***ALL*** instance variables here */
     		eyeNumber = 2;
