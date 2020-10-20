@@ -4,6 +4,7 @@ public class Potatohead
 	/*  PRIVATE instance variables go here  */
 	private String eyeColor, hatStyle;
 	private int eyeNumber;
+	private String mustache;
   
 	// add one instance variable
 	
@@ -14,7 +15,11 @@ public class Potatohead
 		/* initialize ***ALL*** instance variables here */
     		eyeNumber = 2;
 		eyeColor = "unknown";
+
 		hatStyle = "";
+
+		mustacheType = "none";
+
     
     		// initialize your instance variable
     
@@ -35,6 +40,7 @@ public class Potatohead
 		return eyeColor;
 	}
 	
+
 	
 	
 	public void setHatStyle(String style){
@@ -43,7 +49,24 @@ public class Potatohead
 	
 	public String getHatStyle(){
 		return hatStyle;
+  }
+
+	/**
+		String getMustacheType()
+		accessor method for mustache
+		@return a string describing the type of mustache
+	*/
+	public String getMustacheType(){
+		return mustacheType
+	}
 	
+	/**
+		void setMustacheType(String type)
+		mutator method for mustache
+	*/
+	public void setMustacheType(String type){
+		mustacheType = type;
+
 	}
 
 	
@@ -57,7 +80,11 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
+    output += "\nMustache Type: " + mustacheType;
 		output += "Hat Style: " + hatStyle;
+
+		
+
     
     		// Add your instance variable to the toString() method
 
