@@ -4,7 +4,8 @@ public class Potatohead
 	/*  PRIVATE instance variables go here  */
 	private String eyeColor;
 	private int eyeNumber;
-	private String mustache;
+    	private String mustache;
+    	private String hairColor;
   
 	// add one instance variable
 	
@@ -13,9 +14,10 @@ public class Potatohead
 	public Potatohead()
 	{
 		/* initialize ***ALL*** instance variables here */
-    		eyeNumber = 2;
-		eyeColor = "unknown";
-		mustacheType = "none";
+    	eyeNumber = 2;
+	eyeColor = "unknown";
+        mustache = "none";
+        this.hairColor = "";
     
     		// initialize your instance variable
     
@@ -42,7 +44,15 @@ public class Potatohead
 		@return a string describing the type of mustache
 	*/
 	public String getMustacheType(){
-		return mustacheType
+		return mustache;
+    }
+    /**
+		String getHairColor()
+		accessor method for hairColor
+		@return a string describing the type of hairColor
+	*/
+	public String getHairColor(){
+		return hairColor;
 	}
 	
 	/**
@@ -50,7 +60,15 @@ public class Potatohead
 		mutator method for mustache
 	*/
 	public void setMustacheType(String type){
-		mustacheType = type;
+		mustache = type;
+    }
+    /**
+		void setMustacheType(String newHairColor)
+        mutator method for hairColor
+        @param NewHairColor for what the user desires.  
+	*/
+	public void newHairColor(String _newHairColor){
+		this.hairColor = _newHairColor;
 	}
 
 	
@@ -64,7 +82,9 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
-		output += "\nMustache Type: " + mustacheType;
+        	output += "\nMustache Type: " + mustache;
+        	output += "\nHair Color: + hairColor";
+
     
     		// Add your instance variable to the toString() method
 
