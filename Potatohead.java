@@ -9,6 +9,7 @@ public class Potatohead
 	private int eyeNumber;
     	private String mustache;
     	private String hairColor;
+	private String hairStyle;
   
 	// add one instance variable
 	
@@ -21,6 +22,7 @@ public class Potatohead
 		eyeColor = "unknown";
 		mustache = "none";
 		this.hairColor = "";
+		hairStyle = "unknown";
     
     		// initialize your instance variable
     
@@ -81,13 +83,23 @@ public class Potatohead
     		gives the internal state of the Potatohead
     		@return output string
 	*/
+	
+	public void setHairStyle(string _hairStyle){
+		hairStyle = _hairStyle;
+	}
+	
+	public String getHairStyle(){
+		return hairStyle;
+	}
+	
 	public String toString()
 	{
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
         	output += "\nMustache Type: " + mustache;
-        	output += "\nHair Color: + hairColor";
+        	output += "\nHair Color: " + hairColor;
+		output += "\nHair Style: " + hairStyle;
 
     
     		// Add your instance variable to the toString() method
