@@ -5,7 +5,7 @@ public class Potatohead
 {
 
 	/*  PRIVATE instance variables go here  */
-	private String eyeColor;
+	private String eyeColor, hatStyle;
 	private int eyeNumber;
     	private String mustache;
     	private String hairColor;
@@ -19,8 +19,12 @@ public class Potatohead
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
 		eyeColor = "unknown";
+
+		hatStyle = "";
+
 		mustache = "none";
 		this.hairColor = "";
+
     
     		// initialize your instance variable
     
@@ -41,6 +45,17 @@ public class Potatohead
 		return eyeColor;
 	}
 	
+
+	
+	
+	public void setHatStyle(String style){
+		hatStyle = style;
+	}
+	
+	public String getHatStyle(){
+		return hatStyle;
+  }
+
 	/**
 		String getMustacheType()
 		accessor method for mustache
@@ -64,6 +79,7 @@ public class Potatohead
 		@param type
 	*/
 	public void setMustacheType(String type){
+
 		mustache = type;
 	}
 	/**
@@ -73,6 +89,7 @@ public class Potatohead
 	*/
 	public void newHairColor(String _newHairColor){
 		this.hairColor = _newHairColor;
+
 	}
 
 	
@@ -86,8 +103,13 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
+
+    output += "\nMustache Type: " + mustacheType;
+		output += "\nHat Style: " + hatStyle;
+
         	output += "\nMustache Type: " + mustache;
         	output += "\nHair Color: + hairColor";
+
 
     
     		// Add your instance variable to the toString() method
