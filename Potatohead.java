@@ -6,7 +6,7 @@ public class Potatohead
 	private int eyeNumber;
   
 	// add one instance variable
-	
+	private String shoeColor;
   
 	/*  the default, no argument constructor  */
 	public Potatohead()
@@ -14,16 +14,24 @@ public class Potatohead
 		/* initialize ***ALL*** instance variables here */
     		eyeNumber = 2;
 		eyeColor = "unknown";
+		
     
     		// initialize your instance variable
-    
+    		shoeColor = "unknown";
 	}
   
 
 	/*  VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE  */
 	
   	// Add an accessor method and a mutator method for your instance variable
-
+	public void setShoeColor(String color)
+	{
+		shoeColor = color;
+	}
+	
+	public String getShoeColor()
+	{
+		return shoeColor;
 	/**
     		String getEyeColor()
     		accessor method for eyeColor
@@ -47,7 +55,8 @@ public class Potatohead
 		output += "\nEye Color: " + eyeColor;
     
     		// Add your instance variable to the toString() method
-
+		output += " Shoe Color: " + shoeColor;
+		
 		return output;
 	}
 }
