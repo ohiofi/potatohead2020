@@ -4,6 +4,7 @@ public class Potatohead
 	/*  PRIVATE instance variables go here  */
 	private String eyeColor;
 	private int eyeNumber;
+	private String earColor;
   
 	// add one instance variable
 	
@@ -14,6 +15,8 @@ public class Potatohead
 		/* initialize ***ALL*** instance variables here */
     		eyeNumber = 2;
 		eyeColor = "unknown";
+		earColor = "unknown";
+		
     
     		// initialize your instance variable
     
@@ -29,6 +32,16 @@ public class Potatohead
     		accessor method for eyeColor
     		@return a string that describes the eye color
 	*/
+	public String getEarColor()
+	{
+		return earColor;
+	}
+	
+	public void setEarColor(String color)-+
+	{
+		earColor = color;
+	}
+	
 	public String getEyeColor()
 	{
 		return eyeColor;
@@ -45,6 +58,7 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
+		output = "Ear Color: " + earColor;
     
     		// Add your instance variable to the toString() method
 
