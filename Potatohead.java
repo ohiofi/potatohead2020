@@ -58,7 +58,7 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
-		output = "Ear Color: " + earColor;
+		output += "\nEar Color: " + earColor;
     
     		// Add your instance variable to the toString() method
 
