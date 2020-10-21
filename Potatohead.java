@@ -81,7 +81,7 @@ public class Potatohead
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
     output += "\nMustache Type: " + mustacheType;
-		output += "Hat Style: " + hatStyle;
+		output += "\nHat Style: " + hatStyle;
 
 		
 
