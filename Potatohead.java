@@ -1,10 +1,14 @@
+/**
+A class that describes an individual Potatohead toy
+*/
 public class Potatohead
 {
 
 	/*  PRIVATE instance variables go here  */
 	private String eyeColor, hatStyle;
 	private int eyeNumber;
-	private String mustache;
+    	private String mustache;
+    	private String hairColor;
   
 	// add one instance variable
 	
@@ -13,12 +17,13 @@ public class Potatohead
 	public Potatohead()
 	{
 		/* initialize ***ALL*** instance variables here */
-    		eyeNumber = 2;
+		eyeNumber = 2;
 		eyeColor = "unknown";
 
 		hatStyle = "";
 
-		mustacheType = "none";
+		mustache = "none";
+		this.hairColor = "";
 
     
     		// initialize your instance variable
@@ -33,7 +38,7 @@ public class Potatohead
 	/**
     		String getEyeColor()
     		accessor method for eyeColor
-    		@return a string that describes the eye color
+    		@return eyeColor a string that describes the eye color
 	*/
 	public String getEyeColor()
 	{
@@ -54,18 +59,36 @@ public class Potatohead
 	/**
 		String getMustacheType()
 		accessor method for mustache
-		@return a string describing the type of mustache
+		@return mustache a string describing the type of mustache
 	*/
 	public String getMustacheType(){
-		return mustacheType
+		return mustache;
+	}
+    	/**
+		String getHairColor()
+		accessor method for hairColor
+		@return hairColor a string describing the type of hairColor
+	*/
+	public String getHairColor(){
+		return hairColor;
 	}
 	
 	/**
 		void setMustacheType(String type)
 		mutator method for mustache
+		@param type
 	*/
 	public void setMustacheType(String type){
-		mustacheType = type;
+
+		mustache = type;
+	}
+	/**
+		void setMustacheType(String newHairColor)
+		mutator method for hairColor
+		@param newHairColor for what the user desires.  
+	*/
+	public void newHairColor(String _newHairColor){
+		this.hairColor = _newHairColor;
 
 	}
 
@@ -80,10 +103,13 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
+
     output += "\nMustache Type: " + mustacheType;
 		output += "\nHat Style: " + hatStyle;
 
-		
+        	output += "\nMustache Type: " + mustache;
+        	output += "\nHair Color: + hairColor";
+
 
     
     		// Add your instance variable to the toString() method
