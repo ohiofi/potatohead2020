@@ -7,11 +7,10 @@ public class Potatohead
 	/*  PRIVATE instance variables go here  */
 	private String eyeColor, hatStyle;
 	private int eyeNumber;
-    	private String mustache;
-    	private String hairColor;
-  
-	// add one instance variable
-	
+  private String mustache;
+  private String hairColor;
+	private String shoeColor;
+  // add one instance variable
   
 	/*  the default, no argument constructor  */
 	public Potatohead()
@@ -19,22 +18,25 @@ public class Potatohead
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
 		eyeColor = "unknown";
-
 		hatStyle = "";
-
 		mustache = "none";
 		this.hairColor = "";
-
-    
-    		// initialize your instance variable
-    
+    shoeColor = "unknown";
+    // initialize your instance variable
 	}
   
 
 	/*  VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE  */
 	
   	// Add an accessor method and a mutator method for your instance variable
-
+	public void setShoeColor(String color)
+	{
+		shoeColor = color;
+	}
+	
+	public String getShoeColor()
+	{
+		return shoeColor;
 	/**
     		String getEyeColor()
     		accessor method for eyeColor
@@ -103,17 +105,16 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
-
     output += "\nMustache Type: " + mustacheType;
 		output += "\nHat Style: " + hatStyle;
-
-        	output += "\nMustache Type: " + mustache;
-        	output += "\nHair Color: + hairColor";
-
+    output += "\nMustache Type: " + mustache;
+    output += "\nHair Color: + hairColor";
+    output += " Shoe Color: " + shoeColor;
 
     
     		// Add your instance variable to the toString() method
-
+		
+		
 		return output;
 	}
 }
