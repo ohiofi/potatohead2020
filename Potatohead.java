@@ -11,6 +11,7 @@ public class Potatohead
   private String mustache;
   private String hairColor;
 	private String shoeColor;
+	private int numOfArms;
   // add one instance variable
 
   
@@ -25,6 +26,7 @@ public class Potatohead
 		mustache = "none";
 		this.hairColor = "";
     shoeColor = "unknown";
+		numOfArms = 2;
     // initialize your instance variable
 
 	}
@@ -103,9 +105,27 @@ public class Potatohead
 		mutator method for hairColor
 		@param newHairColor for what the user desires.  
 	*/
+	
 	public void newHairColor(String _newHairColor){
 		this.hairColor = _newHairColor;
-
+		
+	/**
+		void setNumOfArms(int _numOfArms)
+		mutator method for numOfArms
+		@param _numOfArms for what the user desires.  
+	*/	
+	}
+	public void setNumOfArms(int _numOfArms){
+		numOfArms = _numOfArms;
+	}
+		
+	/**
+		String getNumOfArms()
+		accessor method for numOfArms
+		@return numOfArms an int describing the number of arms.
+	*/
+	public int getNumOfArms(){
+		return numOfArms;
 	}
 
 	
@@ -125,6 +145,7 @@ public class Potatohead
     output += "\nMustache Type: " + mustache;
     output += "\nHair Color: + hairColor";
     output += " Shoe Color: " + shoeColor;
+		output += "\nNumber of Arms: "+ numOfArms;
 
     
     		// Add your instance variable to the toString() method
