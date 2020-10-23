@@ -5,14 +5,19 @@ public class Potatohead
 {
 
 	/*  PRIVATE instance variables go here  */
-	private String eyeColor;
+	private String eyeColor, hatStyle;
 	private int eyeNumber;
-    	private String mustache;
-    	private String hairColor;
 	private String hairStyle;
-  
-	// add one instance variable
-	
+	private String earColor;
+  private String mustache;
+  private String hairColor;
+	private String shoeColor;
+	private int numOfArms;
+	private String noseStyle;
+	private String hatColor;
+  private String noseColor;
+  // add one instance variable
+
   
 	/*  the default, no argument constructor  */
 	public Potatohead()
@@ -20,29 +25,68 @@ public class Potatohead
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
 		eyeColor = "unknown";
+		earColor = "unknown";
+		hatStyle = "";
 		mustache = "none";
 		this.hairColor = "";
 		hairStyle = "unknown";
-    
-    		// initialize your instance variable
-    
+    shoeColor = "unknown";
+		numOfArms = 2;
+		noseStyle = "";
+		hatColor = "";
+
+    // initialize your instance variable
+
 	}
   
 
 	/*  VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE  */
 	
   	// Add an accessor method and a mutator method for your instance variable
-
+	public void setShoeColor(String color)
+	{
+		shoeColor = color;
+	}
+	
+	public String getShoeColor()
+	{
+		return shoeColor;
 	/**
     		String getEyeColor()
     		accessor method for eyeColor
     		@return eyeColor a string that describes the eye color
 	*/
+	public String getEarColor()
+	{
+		return earColor;
+	}
+	
+	public void setEarColor(String color)-+
+	{
+		earColor = color;
+	}
+	
 	public String getEyeColor()
 	{
 		return eyeColor;
 	}
+		
+	public String getHatColor(){
+		return hatColor;
+	}
+		
+	public void setHatColor(String color){
+		hatColor = color;
+	}
 	
+	public void setHatStyle(String style){
+		hatStyle = style;
+	}
+	
+	public String getHatStyle(){
+		return hatStyle;
+  }
+
 	/**
 		String getMustacheType()
 		accessor method for mustache
@@ -66,6 +110,7 @@ public class Potatohead
 		@param type
 	*/
 	public void setMustacheType(String type){
+
 		mustache = type;
 	}
 	/**
@@ -73,10 +118,42 @@ public class Potatohead
 		mutator method for hairColor
 		@param newHairColor for what the user desires.  
 	*/
+	
 	public void newHairColor(String _newHairColor){
 		this.hairColor = _newHairColor;
+		
+	/**
+		void setNumOfArms(int _numOfArms)
+		mutator method for numOfArms
+		@param _numOfArms for what the user desires.  
+	*/	
 	}
-
+	public void setNumOfArms(int _numOfArms){
+		numOfArms = _numOfArms;
+	}
+		
+	/**
+		String getNumOfArms()
+		accessor method for numOfArms
+		@return numOfArms an int describing the number of arms.
+	*/
+	public int getNumOfArms(){
+		return numOfArms;
+	}
+	
+	public void setNoseStyle(String style) {
+		noseStyle = style;
+	}
+	
+	public String getNoseStyle() {
+		return noseStyle;
+	}
+        public void setNoseColor(String _noseColor){
+		noseColor = _noseColor;
+	}
+        public String getNoseColor(){
+                return noseColor;
+	}
 	
 	/**
     		String toString()
@@ -97,13 +174,23 @@ public class Potatohead
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
-        	output += "\nMustache Type: " + mustache;
-        	output += "\nHair Color: " + hairColor;
 		output += "\nHair Style: " + hairStyle;
+		output += "\nEar Color: " + earColor;
+    output += "\nMustache Type: " + mustacheType;
+		output += "\nHat Style: " + hatStyle;
+    output += "\nMustache Type: " + mustache;
+    output += "\nHair Color: + hairColor";
+    output += " Shoe Color: " + shoeColor;
+		output += "\nNumber of Arms: "+ numOfArms;
+		output += "\nNose Style: " + noseStyle;
+		output += "\nHat Color: " + hatColor;
+    output += "\nNose Color: " + noseColor;
+
 
     
     		// Add your instance variable to the toString() method
-
+		
+		
 		return output;
 	}
 }
