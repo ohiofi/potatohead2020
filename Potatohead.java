@@ -14,7 +14,7 @@ public class Potatohead
 	private int numOfArms;
 	private String noseStyle;
 	private String hatColor;
-
+        private String noseColor;
   // add one instance variable
 
   
@@ -150,7 +150,12 @@ public class Potatohead
 	public String getNoseStyle() {
 		return noseStyle;
 	}
-
+        public void setNoseColor(String _noseColor){
+		noseColor = _noseColor;
+	}
+        public String getNoseColor(){
+                return noseColor;
+	}
 	
 	/**
     		String toString()
@@ -171,7 +176,7 @@ public class Potatohead
 		output += "\nNumber of Arms: "+ numOfArms;
 		output += "\nNose Style: " + noseStyle;
 		output += "\nHat Color: " + hatColor;
-
+                output += "\nNose Color: " + noseColor;
 
     
     		// Add your instance variable to the toString() method
