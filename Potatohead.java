@@ -9,14 +9,15 @@ public class Potatohead
 	private int eyeNumber;
 	private String hairStyle;
 	private String earColor;
-  private String mustache;
-  private String hairColor;
+	private String mustache;
+	private String hairColor;
 	private String shoeColor;
 	private int numOfArms;
 	private String noseStyle;
 	private String hatColor;
-  private String noseColor;
-  // add one instance variable
+	private String noseColor;
+	
+	// add one instance variable
 
   
 	/*  the default, no argument constructor  */
@@ -30,12 +31,12 @@ public class Potatohead
 		mustache = "none";
 		this.hairColor = "";
 		hairStyle = "unknown";
-    shoeColor = "unknown";
+		shoeColor = "unknown";
 		numOfArms = 2;
 		noseStyle = "";
 		hatColor = "";
 
-    // initialize your instance variable
+    		// initialize your instance variable
 
 	}
   
@@ -85,7 +86,7 @@ public class Potatohead
 	
 	public String getHatStyle(){
 		return hatStyle;
-  }
+  	}
 
 	/**
 		String getMustacheType()
@@ -176,15 +177,15 @@ public class Potatohead
 		output += "\nEye Color: " + eyeColor;
 		output += "\nHair Style: " + hairStyle;
 		output += "\nEar Color: " + earColor;
-    output += "\nMustache Type: " + mustacheType;
+    		output += "\nMustache Type: " + mustacheType;
 		output += "\nHat Style: " + hatStyle;
-    output += "\nMustache Type: " + mustache;
-    output += "\nHair Color: + hairColor";
-    output += " Shoe Color: " + shoeColor;
+    		output += "\nMustache Type: " + mustache;
+    		output += "\nHair Color: + hairColor";
+    		output += " Shoe Color: " + shoeColor;
 		output += "\nNumber of Arms: "+ numOfArms;
 		output += "\nNose Style: " + noseStyle;
 		output += "\nHat Color: " + hatColor;
-    output += "\nNose Color: " + noseColor;
+   		 output += "\nNose Color: " + noseColor;
 
 
     
