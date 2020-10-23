@@ -13,6 +13,8 @@ public class Potatohead
 	private String shoeColor;
 	private int numOfArms;
 	private String noseStyle;
+	private String hatColor;
+
   // add one instance variable
 
   
@@ -29,6 +31,8 @@ public class Potatohead
     shoeColor = "unknown";
 		numOfArms = 2;
 		noseStyle = "";
+		hatColor = "";
+
     // initialize your instance variable
 
 	}
@@ -64,6 +68,15 @@ public class Potatohead
 	{
 		return eyeColor;
 	}
+		
+	public String getHatColor(){
+		return hatColor;
+	}
+		
+	public void setHatColor(String color){
+		hatColor = color;
+	}
+		
 	
 
 	
@@ -157,6 +170,8 @@ public class Potatohead
     output += " Shoe Color: " + shoeColor;
 		output += "\nNumber of Arms: "+ numOfArms;
 		output += "\nNose Style: " + noseStyle;
+		output += "\nHat Color: " + hatColor;
+
 
     
     		// Add your instance variable to the toString() method
