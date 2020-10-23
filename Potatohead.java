@@ -7,6 +7,7 @@ public class Potatohead
 	/*  PRIVATE instance variables go here  */
 	private String eyeColor, hatStyle;
 	private int eyeNumber;
+	private String hairStyle;
 	private String earColor;
   private String mustache;
   private String hairColor;
@@ -14,7 +15,7 @@ public class Potatohead
 	private int numOfArms;
 	private String noseStyle;
 	private String hatColor;
-        private String noseColor;
+  private String noseColor;
   // add one instance variable
 
   
@@ -28,6 +29,7 @@ public class Potatohead
 		hatStyle = "";
 		mustache = "none";
 		this.hairColor = "";
+		hairStyle = "unknown";
     shoeColor = "unknown";
 		numOfArms = 2;
 		noseStyle = "";
@@ -76,10 +78,6 @@ public class Potatohead
 	public void setHatColor(String color){
 		hatColor = color;
 	}
-		
-	
-
-	
 	
 	public void setHatStyle(String style){
 		hatStyle = style;
@@ -162,11 +160,21 @@ public class Potatohead
     		gives the internal state of the Potatohead
     		@return output string
 	*/
+	
+	public void setHairStyle(string _hairStyle){
+		hairStyle = _hairStyle;
+	}
+	
+	public String getHairStyle(){
+		return hairStyle;
+	}
+	
 	public String toString()
 	{
 		String output;
 		output =  "Number Of Eyes: " + eyeNumber;
 		output += "\nEye Color: " + eyeColor;
+		output += "\nHair Style: " + hairStyle;
 		output += "\nEar Color: " + earColor;
     output += "\nMustache Type: " + mustacheType;
 		output += "\nHat Style: " + hatStyle;
@@ -176,7 +184,8 @@ public class Potatohead
 		output += "\nNumber of Arms: "+ numOfArms;
 		output += "\nNose Style: " + noseStyle;
 		output += "\nHat Color: " + hatColor;
-                output += "\nNose Color: " + noseColor;
+    output += "\nNose Color: " + noseColor;
+
 
     
     		// Add your instance variable to the toString() method
