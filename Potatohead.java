@@ -176,7 +176,7 @@ public class Potatohead
 		return armStyle;
 	}
 	
-	public void setArmStyle(_style){
+	public void setArmStyle(String _style){
 		armStyle = _style;
 	}
 	
