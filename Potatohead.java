@@ -16,6 +16,7 @@ public class Potatohead
 	private String noseStyle;
 	private String hatColor;
 	private String noseColor;
+	private String armStyle;
 	
 	// add one instance variable
 
@@ -35,6 +36,7 @@ public class Potatohead
 		numOfArms = 2;
 		noseStyle = "";
 		hatColor = "";
+		armStyle = "curved";
 
     		// initialize your instance variable
 
@@ -169,6 +171,14 @@ public class Potatohead
 	public String getHairStyle(){
 		return hairStyle;
 	}
+		
+	public String getArmStyle(){
+		return armStyle;
+	}
+	
+	public void setArmStyle(_style){
+		armStyle = _style;
+	}
 	
 	public String toString()
 	{
@@ -185,7 +195,8 @@ public class Potatohead
 		output += "\nNumber of Arms: "+ numOfArms;
 		output += "\nNose Style: " + noseStyle;
 		output += "\nHat Color: " + hatColor;
-   		 output += "\nNose Color: " + noseColor;
+   		output += "\nNose Color: " + noseColor;
+		output += "\nArm Style: " + armStyle;
 
 
     
