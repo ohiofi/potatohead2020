@@ -19,7 +19,7 @@ public class Potatohead
 	private String armStyle;
 	
 	// add one instance variable
-
+	private int numOfLegs;
   
 	/*  the default, no argument constructor  */
 	public Potatohead()
@@ -39,7 +39,7 @@ public class Potatohead
 		armStyle = "curved";
 
     		// initialize your instance variable
-
+		numOfLegs = 2;
 	}
   
 
@@ -144,6 +144,14 @@ public class Potatohead
 		return numOfArms;
 	}
 	
+	public void setNumOfLegs(int _numOfLegs) {
+		numOfLegs = _numOfLegs;
+	}
+		
+	public int getNumOfLegs(){
+		return numOfLegs;
+	}
+		
 	public void setNoseStyle(String style) {
 		noseStyle = style;
 	}
@@ -201,7 +209,7 @@ public class Potatohead
 
     
     		// Add your instance variable to the toString() method
-		
+		output += "\nNumber of Legs: "+ numOfLegs;
 		
 		return output;
 	}
